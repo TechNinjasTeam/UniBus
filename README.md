@@ -18,34 +18,30 @@ O UniBus organiza essa conversa em um fluxo só, com os dois lados no mesmo luga
 4. Na volta, o operador abre a chamada de retorno com hora limite de espera. O aluno confirma, e o operador acompanha ao vivo quem já respondeu.
 
 ## Funcionalidades
-
-### Núcleo
-
+ 
 **Operador**
-- Cadastro de rota: cidade, faculdade, dias, horários de ida e volta, lugares
-- Cadastro de pontos de embarque com horário
-- Cadastro dos alunos que já atende e envio do link de convite
-- Aprovação de solicitações de vaga
-- Lista de embarque da ida, no modelo opt-out
-- Chamada de retorno: hora limite de espera, ponto de onde a van está e checklist ao vivo de quem confirmou
-
-**Aluno**
-- Conta com e-mail, senha e telefone
-- Entrada na rota pelo link de convite do operador; o vínculo com a lista do operador é feito pelo telefone
-- Busca de rota por cidade e faculdade, com solicitação de vaga
-- Consulta de ponto de embarque e horários
-- Aviso de falta na ida
-- Resposta à chamada de retorno
-
-### Must have (Funcionalidades extra)
-
-Previstas, ainda não implementadas:
-
-- Notificação push, tela de instalação no iPhone e botão de copiar o link da chamada para o WhatsApp como plano B
-- Check-in do operador no embarque
+- Cadastro de rota: cidade de origem, faculdade, dias, horários de ida e volta, lugares
+- Cadastro de pontos de embarque com horário previsto por rota
+- Importação da turma atual: cadastro dos telefones dos alunos que já atende, para que entrem aprovados ao criar a conta; link de convite pro grupo é opcional
+- Aprovação ou recusa dos demais pedidos de vaga
+- Lista de embarque da ida, com lugares restantes
+- Chamada de retorno com hora limite e localização da van, e checklist de confirmação em tempo real
+- Link alternativo da chamada, para envio manual
+- Check-in de embarque
 - Frequência por aluno e ocupação por viagem
-- Controle de mensalidade (pago/pendente), marcado manualmente
-- Localização da van em primeiro plano, com posição atualizada a cada ~10s e marcador que envelhece na tela do aluno
+- Controle de mensalidade: marcação de pago/pendente e visualização de atrasos
+  
+**Aluno**
+- Conta criada direto no app, com e-mail, senha e telefone; fica logado no dispositivo
+- Busca de vans por cidade e faculdade, com lugares e horários disponíveis, e pedido de vaga
+- Visualização do ponto de embarque, horários e dados da rota
+- Aviso de falta na ida
+- Confirmação na chamada de retorno
+- Notificação push da chamada, com permissão solicitada após o primeiro login
+- Orientação de instalação na tela inicial do iPhone
+**Os dois lados**
+- Localização da van durante a viagem, com indicação de quando a posição foi atualizada
+A lista completa de requisitos (RF01–RF18) está na documentação do projeto.
 
 ## Fora do escopo
 
